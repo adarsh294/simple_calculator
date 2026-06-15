@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="w-screen h-screen flex justify-center items-center">
+  <div class="calculater shadow-2xl w-[500px] py-[20px] rounded-2xl md:h-[50vh] flex flex-col border-[1px] relative border-black items-center  justify-center">
+    
+     <h1 class="md:absolute top-0 text-[30px] md:text-[40px] font-black ">Arithmatic Operater</h1>
+
+     <div class="main md:w-[70%] w-[90%] flex flex-col md:flex-row md:m-[20px] items-center md:justify-between">
+        <label for="num1">First number</label>
+        <input class="border-[1px] border-black w-[50%] text-center" type="number" id="num1" >
+     </div>
+
+     <div class="main md:w-[70%] w-[90%] flex flex-col md:flex-row items-center md:justify-between">
+        <label for="num2">second number</label>
+        <input class="border-[1px] border-black rounded-[3px] text-center w-[50%]" type="number" id="num2" >
+     </div>
+
+     <div class="a w-[70%] flex justify-center items-center mt-[10px]">
+         <select name="sel" id="sel" class="border-[1px] border-black rounded-[3px]">
+             <option value="">select option</option>
+             <option value="add">add</option>
+             <option value="substract">substract</option>
+             <option value="multiply">multiply</option>
+             <option value="division">division</option>
+            </select>
+    </div>
+
+     <div class="main w-[70%] flex justify-center gap-[5px] md:justify-between mt-[20px] ">
+        <button class="result border-[1px] border-black rounded-[3px] px-[8px] py-[3px]">result</button>
+        <input class="border-[1px] border-black rounded-[3px] text-center" type="number"  >
+     </div>
+
+  </div>
+ <script src="num.js"></script>
+</body>
+</html>
